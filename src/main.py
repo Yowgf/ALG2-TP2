@@ -2,5 +2,5 @@
 
 from .interface import interface
 
-def main(inFile):
-    interface(inFile)
+def main(inFile, algName):
+    return interface(inFile, algName)

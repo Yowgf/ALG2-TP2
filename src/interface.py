@@ -40,11 +40,7 @@ def readTable(inFile):
 
     return inTable, numWeights, maxWeight
 
-def interface(inFile):
+def interface(inFile, algName):
     algData = readTable(inFile)
 
-    print("Backtracking result: ",
-          algorithm(algData, "backtracking"))
-    
-    print("Branch-and-bound result: ",
-          algorithm(algData, "branchAndBound"))
+    return algorithm(algData, algName)
